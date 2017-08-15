@@ -1,0 +1,184 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #ecf0f1;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-weight: bold;
+}
+
+div.middle {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+div.tablaPeriodica {
+  margin-top: 2.5%;
+  display: inline-block;
+}
+
+table.tablaPeriodica {
+  font-family: 'Montserrat', sans-serif;
+  border-spacing: 0.5vh;
+}
+
+table.tablaPeriodica tr{
+  padding: 0;
+}
+
+table.tablaReferencias {
+  font-family: 'Montserrat', sans-serif;
+  border-spacing: 1vw;
+  text-align: left;
+  font-size: 1vw;
+}
+
+th { font-size: 1vw; }
+
+svg.element {
+  width: 3vw;
+  height: 3vw;
+  transition: 0.25s;
+  user-select: none;
+}
+
+svg.element:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+rect.elementRect {
+  width: inherit;
+  height: inherit;
+  rx: 0.5vw;
+  ry: 0.5vw;
+}
+
+text.elementText {
+  transform: translate(1.5vw, 1.5vw);
+  fill: #ecf0f1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 1.25vw;
+  text-anchor: middle;
+  text-align: center;
+  alignment-baseline: central;
+}
+
+/* SELECTOR */
+.selector {
+  cursor: default;
+}
+
+/* IFRAME */
+iframe.elementPickedIFRAME {
+  margin: auto;
+  border-style: none;
+  overflow-y: scroll;
+  width: 100%;
+  height: 70vh;
+  border-radius: 0.5vw;
+}
+
+/* ELEMENTO PICKEADO */
+#elementPicked {
+  margin-top: 5%;
+  float: right;
+  display: inline-block;
+  margin-right: 4vw;
+  user-select: none;
+  cursor: pointer;
+  transition: opacity 1s;
+}
+
+#elementPickedRect {
+  width: inherit;
+  height: inherit;
+  rx: 0.5vw;
+  ry: 0.5vw;
+}
+
+#elementPicked text {
+  fill: #ecf0f1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#elementPickedSimQuimico {
+  text-anchor: middle;
+  alignment-baseline: central;
+  transform: translate(5vw, 5vw);
+  font-size: 3vw;
+  font-weight: bolder;
+}
+
+#elementPickedNom {
+  transform: translate(5vw, 8vw);
+  text-anchor: middle;
+  alignment-baseline: central;
+  font-size: 1.5vw;
+}
+
+#elementPickedMasaAtom {
+  transform: translate(0.75vw, 1.5vw);
+  text-anchor: start;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+#elementPickedEnergiaIon {
+  transform: translate(0.75vw, 2.75vw);
+  text-anchor: start;
+  font-size: 0.75vw;
+}
+
+#elementPickedElectroN {
+  transform: translate(9.25vw, 2.75vw);
+  text-anchor: end;
+  font-size: 0.75vw;
+}
+
+#elementPickedNumAtom {
+  transform: translate(9.25vw, 1.75vw);
+  text-anchor: end;
+  font-weight: bolder;
+  font-size: 1.75vw;
+}
+
+#elementPickedConfigElec {
+  transform: translate(1vw, 11vw);
+  text-anchor: start;
+  font-weight: bold;
+  font-size: 0.75vw;
+}
+
+/* TIPOS ELEMENTOS */
+rect.metalAlcalino { fill: #f1c40f; transition: 0.75s; }
+
+rect.metalAlcalinoTerreo { fill: #f39c12; transition: 0.75s; }
+
+rect.otroMetal { fill: #f46b5d; transition: 0.75s; }
+
+rect.metalTransicion { fill: #a1c62f; transition: 0.75s;}
+
+rect.lantanido { fill: #1abc9c; transition: 0.75s;}
+
+rect.actinido { fill: #16a085; transition: 0.75s; }
+
+rect.metaloide { fill: #30cc72; transition: 0.75s; }
+
+rect.noMetal { fill: #9b59b6; transition: 0.75s; }
+
+rect.halogeno { fill: #e67e22; transition: 0.75s; }
+
+rect.gasNoble { fill: #49b4ff; transition: 0.75s; }
+
+rect.elementoDesconocido { fill: #95a5a6; transition: 0.75s; }
+
+rect.null { fill: #2c3e50; transition: 0.75s; }
