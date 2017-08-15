@@ -1,2 +1,2 @@
-# tabla_periodica_int
-Tabla periódica interactiva 
+#Tabla periodica interactiva
+[Inserte descripción aquí]
