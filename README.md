@@ -1,2 +1,3 @@
-#Tabla periodica interactiva
+# Tabla periodica interactiva}
+
 [Inserte descripción aquí]
