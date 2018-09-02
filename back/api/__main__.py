@@ -1,12 +1,12 @@
 import yaml
 
-from api import create_app
+from create_api import create_app
 
 # Load config
 with open("./config.yaml", "r") as config_file:
     config = yaml.load(config_file)
 
-api = create_app()
+api = create_app(config)
 
 host = config["api"]["host"]
 port = config["api"]["port"]

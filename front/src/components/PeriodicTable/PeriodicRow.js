@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-
 import PeriodicElement from './PeriodicElement';
+import './styles/row.css';
 
 class PeriodicRow extends Component {
     render() {
-        let num_columns = this.props.numColumns;
-        let columns = [];
+        let columns  = [];
+        let elements = this.props.elements;
 
-        for (let x = 0; x < num_columns; x++) {
-            columns.push(<PeriodicElement key={x} />);
-        }
+        elements.forEach((e, x) => {
+            columns.push(<PeriodicElement key={x} element={e}/>);
+        });
 
         return (
-            <div>
+            <tr className="periodic-row">
                 {columns}
-            </div>
+            </tr>
         )
     }
 }

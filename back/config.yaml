@@ -3,7 +3,7 @@ api:
     host: "0.0.0.0"
     port: 8080
 mysql:
-    user: ""
+    user: "user_tabla_periodica"
     password: ""
-    database: ""
-    host: ""
+    database: "tablaperiodica"
+    host: "localhost"
